@@ -1,0 +1,42 @@
+.loader{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border:lawngreen 12px solid;
+    border-top: solid 12px gray;
+    animation: spinAnimate 3s steps(5) 0s infinite normal;
+}
+@keyframes spinAnimate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+a{
+    text-decoration: none;
+    background-color: blue;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    margin-left: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    margin-left: 45%;
+    margin-top: 15%;
+}
+
+@media  screen and (max-width:300px){
+       .loader{
+        display: none;
+       }
+       a{
+        display: none;
+       }
+}
+    
